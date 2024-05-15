@@ -5,6 +5,8 @@
 //  https://cs571api.cs.wisc.edu/rest/su24/ice/pasta
 //  https://cs571api.cs.wisc.edu/rest/su24/ice/pizza
 
+const reviewNum = 0;
+
 const BASE_AMNS = [1, 15, 14.5, 2, 1, 1, 1]
 const REVIEWS = [
     "A burst of warmth and flavor in every spoonful; simple yet irresistible!",
@@ -13,10 +15,14 @@ const REVIEWS = [
     "Quick, flavorful, and satisfying - this chili hits all the right notes!"
 ]
 
+
+// TODO Implement the update yield!
 function updateYield() {
     alert("I should update the yield!");
 }
 
+// TODO Fix the reviews!
 function displayReview() {
-    alert("I should display a review!");
+    alert(REVIEWS[reviewNum]);
+    reviewNum = (reviewNum + 1) % REVIEWS.length;
 }
