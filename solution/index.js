@@ -98,7 +98,7 @@ function displayReview() {
     } else {
         let reviews = recipe.reviews; // remember! this is a list of objects containing "txt" and "rating"
         alert(reviews[reviewNum].txt);
-        reviewNum = (reviewNum + 1) % recipe.reviews.length;
+        reviewNum = (reviewNum + 1) % reviews.length;
     }
 }
 
